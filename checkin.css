@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.container-custom {
+  max-width: 800;
+  max-height: 800;
+}
+.scanner-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.action-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* .btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+} */
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.guest-container {
+  border: 3px solid #007bff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+  padding: 20px;
+}
+
+.guest-name {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.guest-status {
+  background-color: #007bff;
+  border-radius: 20px; /* To create the pill shape */
+  color: #fff; /* White text */
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 60px;
+  height: 20px;
+  text-align: center;
+}
+
+.guest-contact {
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-top: 3px;
+}
+
+.guest-email {
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-top: 3px;
+}
+
+.guest-number {
+  margin-top: 3px;
+  width: 80px;
+}
+
+.active-border {
+  border-color: #4caf50; /* Green */
+}
+
+.inactive-border {
+  border-color: gray; /* Gray */
+}
+
+.active {
+  background-color: #4caf50; /* Green */
+  color: #fff; /* White text */
+}
+
+.inactive {
+  background-color: gray; /* Gray */
+  color: #fff; /* White text */
+}
+
+label {
+  display: inline-block;
+  width: auto;
+}
+
+/* Remove the default select styling */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent; /* Make the background transparent */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px;
+  padding: 8px; /* Add some padding */
+  font-size: 14px; /* Set font size */
+  width: 100%; /* Make it full-width */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Style the select when it's focused */
+select:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: #007bff; /* Change border color on focus */
+}
+
+/* Style the dropdown arrow */
+select::-ms-expand,
+select::-webkit-select {
+  display: none; /* Remove default arrow on most browsers */
+}
+
+select::after {
+  content: "\25BC"; /* Unicode character for a downward-pointing arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Style the options within the dropdown */
+select option {
+  background-color: #fff; /* Background color for each option */
+  padding: 8px;
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  .scanner-container {
+    flex-direction: column;
+  }
+}
